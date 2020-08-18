@@ -1,0 +1,15 @@
+.random {
+    background: #34495E;
+    color: #fff;
+    border-radius: 5px;
+    width: 225px;
+    text-align: center;
+}
+
+.random div {
+    padding: 8px;
+}
+
+.random span {
+    float: right;
+}

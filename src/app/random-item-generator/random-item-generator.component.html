@@ -1,0 +1,13 @@
+<h3>Random Item Generator:</h3>
+<div class="random">
+    <input  #numberOfPlayers (keyup.enter)="randomItems(numberOfPlayers.value); numberOfPlayers.value = ''" type="text" placeholder="Enter number of players"/>
+    <button (click)="randomItems(numberOfPlayers.value); numberOfPlayers.value = ''">Generate</button>
+    <button (click)="clearItems()">Clear Items</button>
+    <ul *ngFor="let item of players">
+        <li>{{item[0].name}}</li>
+        <li>{{item[1].name}}</li>
+        <li>{{item[2].name}}</li>
+        <li>{{item[3].name}}</li>
+    </ul>
+    
+</div>
